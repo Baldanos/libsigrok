@@ -656,6 +656,12 @@ src_libdrivers_la_SOURCES += \
 	src/hardware/uni-t-ut32x/protocol.c \
 	src/hardware/uni-t-ut32x/api.c
 endif
+if HW_VICTOR_8145C
+src_libdrivers_la_SOURCES += \
+	src/hardware/victor-8145c/protocol.h \
+	src/hardware/victor-8145c/protocol.c \
+	src/hardware/victor-8145c/api.c
+endif
 if HW_YOKOGAWA_DLM
 src_libdrivers_la_SOURCES += \
 	src/hardware/yokogawa-dlm/protocol.h \
