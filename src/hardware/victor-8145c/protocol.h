@@ -28,6 +28,9 @@
 #define LOG_PREFIX "victor-8145c"
 
 struct dev_context {
+	struct sr_sw_limits limits;
+	char buf[256];
+	int buflen;
 };
 
 SR_PRIV int victor_8145c_receive_data(int fd, int revents, void *cb_data);
